@@ -1,3 +1,8 @@
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 body {
 	font-family: Arial;
 	font-size: 16px;
@@ -20,12 +25,21 @@ section.results {
   grid-gap: 32px 32px;
   padding: 32px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  font-size: 12px;
 }
 
 div.single-result div.image {
   background-color:  #EEEEEE;
   height: 400px;
   margin: 0 0 16px 0;
+  padding: 32px;
+}
+
+div.single-result img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: fadein 1s 0.5s both;
 }
 
 div.single-result span.loading {
@@ -37,4 +51,8 @@ div.single-result span.loading {
 
 div.single-result p span.loading {
   width: 30%;
+}
+
+div.single-result h2 {
+  font-weight: 700;
 }
