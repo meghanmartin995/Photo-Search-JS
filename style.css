@@ -1,0 +1,40 @@
+body {
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: #ffffff;
+	color: #333333;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: #eeeeee;
+  padding: 16px 32px;
+  outline: none;
+}
+
+section.results {
+  display: grid;
+  grid-gap: 32px 32px;
+  padding: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+div.single-result div.image {
+  background-color:  #EEEEEE;
+  height: 400px;
+  margin: 0 0 16px 0;
+}
+
+div.single-result span.loading {
+  background-color:  #EEEEEE;
+  height: 12px;
+  width: 50%;
+  display: inline-block;
+}
+
+div.single-result p span.loading {
+  width: 30%;
+}
